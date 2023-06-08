@@ -1,0 +1,215 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat:wght@300&family=Raleway:wght@300&family=Roboto+Mono&display=swap');
+
+/* For Webkit based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 5px; /* Set the width of the scrollbar */
+    cursor: pointer;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #b4b0b0; /* Set the color of the scrollbar thumb */
+    border-radius: 5px; /* Set the border radius of the scrollbar thumb */
+  }
+
+html, body {    
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.Header {
+    display: grid;
+    place-items: center;
+    height: 40px;
+    /* text-align: center; */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #9DB2BF;
+}
+
+.toggle-button {
+    position: absolute;
+    margin-left: 100%;
+    margin-top: 50%;
+    height: 52px;
+    /* width: 50px; */
+    border: 1px solid black;
+    background: none;
+    background-color: #e26880;
+    border-radius: 30%;
+}
+
+.toggle-button:hover {
+    background-color: #ff6d8a;
+}
+
+.toggle-button:active {
+    background-color: #3F979B;
+}
+
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    width: 40%;
+    min-width: 400px;
+    font-family: 'Roboto Mono', monospace;
+    border-right: 2px solid black;
+    transition: transform 0.5s ease;
+}
+
+.Sidebar.close {
+    transform: translateX(-100%);
+}
+
+.Dark {
+    background-color: #27374D;
+}
+
+.Light {
+    background-color: #F9F5F6;
+}
+
+.chat-header {
+    display: flex;
+    /* flex-direction: row; */
+    background-color: #C6EBC5;
+}
+
+.name {
+    flex: 0.9;
+    height: 30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: #C6EBC5;
+}
+
+.chat-header button {
+    flex: 0.1;
+    outline: none;
+    border: none;
+    background-color: #C6EBC5;
+}
+
+.chat-header button:hover {
+    background-color: #405c3e31;
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.Message {
+    display: flex;
+    margin: 15px 10px 0;
+    font-weight: bold;
+}
+
+.self {
+    display: flex;
+    flex-direction: column;
+    color: blue;
+    margin-left: auto;
+    padding: 1px 6px 0 10px;
+    color: #377D71;
+    background-color: #DDE6ED;
+    border-radius: 20px;
+}
+
+.other {
+    display: flex;
+    flex-direction: column;
+    padding: 1px 6px 0 10px;
+    color: #eb2222;
+    /* background-color: #9DB2BF; */
+    background-color: #f0c8d0;
+    border-radius: 20px;
+}
+
+.title-name {
+    text-align: left;
+    height: 15px;
+    padding: 2px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.message {
+    padding: 8px 20px 10px;
+    max-width: 300px;
+    overflow-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    color: #270585;
+}
+
+code {
+    color: black;
+    background-color: #6f93957b;
+}
+
+.time-stamp {
+    text-align: right;
+    height: 20px;
+    /* padding-bottom: 2px; */
+    font-family: 'Inconsolata', monospace;
+    color: #52486f;
+}
+
+.input {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    position: absolute;
+    bottom: 42px;
+    height: 50px;
+    width: 100%;
+}
+
+.input textarea {
+    flex: 0.9;
+    box-sizing: border-box;
+    height: 100%;
+    resize: none;
+    padding: 10px;
+    padding: 13px 10px 7px 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    background-color: #d75b74;
+}
+
+.input textarea::placeholder {
+    color: black;
+}
+
+.input button {
+    display: grid;
+    place-items: center;
+    flex: 0.1;
+    /* width: 20%; */
+    height: 100%;
+    border-radius: 0 70px 70px 0;
+    border: none;
+    background: none;
+    background-color: #1bc00cdb;
+}
+
+.input button:hover {
+    background-color: #15ff00dd;
+}
+
+.input button:active {
+    background-color: #3F979B;
+}
