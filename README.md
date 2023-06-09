@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# React Sidebar Chat Application
+This is a React sidebar application that supports live chatting, allowing users to communicate with each other in real-time. The sidebar includes additional features such as code highlighting. This README provides an overview of the application's functionalities.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Demo
+You can access the live demo of the application at Demo Link.
 
-## Available Scripts
+## Getting Started
+To run the React sidebar chat application locally, follow these steps:
 
-In the project directory, you can run:
+- Clone the repository:
+`git clone https://github.com/your-username/your-repo.git`
+- Install dependencies:
+`cd your-repo`
+`npm install`
+- Start the development server:
+`npm start`
+- Open your browser and visit http://localhost:3000 to see the application.
 
-### `npm start`
+## Chat Feature
+The chat feature enables real-time messaging between users through a WebSocket communication channel. Here's how it works:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- WebSocket Communication: The application utilizes the WebSocket protocol to establish a bi-directional communication channel between the client and the server. This allows for instant message delivery and updates without frequent HTTP requests.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Real-Time Messaging: When a user sends a message in the chat interface, it is sent to the server using the WebSocket package. The server receives and stores the messages from all connected clients, ensuring that all clients have access to the latest chat history. The React state management handles the real-time updates on the client-side.
 
-### `npm test`
+- Message Display: Each message in the chat is displayed with the name of the sender, the message content, and a timestamp. The user's own messages are distinguished from others using the socket ID associated with each message.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Theme Toggle Button: A toggle button is provided within the sidebar interface, enabling users to switch between light and dark mode. When the user interacts with the toggle button, the theme state is updated accordingly.
 
-### `npm run build`
+## Code Highlighting
+- The sidebar application automatically highlights code snippets shared in the chat, improving their readability. Here's an overview of the code highlighting feature:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Syntax Highlighting Rules: The code highlighting feature relies on a mapping of language keywords and their corresponding CSS classes. These rules are defined in the syntaxHighlightingRules object, allowing for customization and support for different programming languages or syntaxes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Checking for Code Snippets: The application checks if a message is a code snippet by using the isCodeSnippet function. It looks for messages that start with // or triple backticks to identify code snippets.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Highlighting Code Syntax: The highlightCode function applies syntax highlighting to code snippets. It uses regular expressions to match keywords in the code, separates comments from the code, and applies custom styling using HTML <span> elements with corresponding CSS classes. The resulting code with syntax highlighting can be rendered within the chat interface.
