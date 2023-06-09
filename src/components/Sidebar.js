@@ -14,10 +14,10 @@ export default function Sidebar() {
   const [socketId, setSocketId] = useState("");
   const [socket, setSocket] = useState(null);
   const [chat, setChat] = useState([]);
-
   const [theme, setTheme] = useState("Dark");
-
   const containerRef = useRef(null);
+
+  const backendURL = process.env.REACT_APP_BACKEND_URL;
 
   useEffect(() => {
     const container = containerRef.current;
@@ -26,7 +26,7 @@ export default function Sidebar() {
 
   useEffect(() => {
 
-    const socket = io('https://sidebar-backend.onrender.com');
+    const socket = io(backendURL);
     setSocket(socket);
 
     socket.on('message', (messages) => {
