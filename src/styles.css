@@ -14,16 +14,20 @@
 html, body {    
     margin: 0;
     padding: 0;
-    height: 100%;
+    background: url(../public/background-pattern.jpg);
+    background-repeat: repeat;
+    /* background-size: cover; */
 }
 
 .Header {
     display: grid;
     place-items: center;
     height: 40px;
-    /* text-align: center; */
+    color: white;
+    font-size: large;
+    font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    background-color: #9DB2BF;
+    background-color: #9db2bf7b;
 }
 
 .toggle-button {
@@ -31,11 +35,10 @@ html, body {
     margin-left: 100%;
     margin-top: 50%;
     height: 52px;
-    /* width: 50px; */
-    border: 1px solid black;
+    border: none;
     background: none;
-    background-color: #e26880;
-    border-radius: 30%;
+    background-color: #95f492;
+    border-radius: 20px;
 }
 
 .toggle-button:hover {
@@ -50,11 +53,11 @@ html, body {
     display: flex;
     flex-direction: column;
     position: fixed;
-    height: 100vh;
+    height: 90%;
     width: 40%;
     min-width: 400px;
+    min-height: 400px;
     font-family: 'Roboto Mono', monospace;
-    border-right: 2px solid black;
     transition: transform 0.5s ease;
 }
 
@@ -67,49 +70,55 @@ html, body {
 }
 
 .Light {
-    background-color: #F9F5F6;
+    background-color: #f9f5f668;
 }
 
 .chat-header {
     display: flex;
-    /* flex-direction: row; */
-    background-color: #C6EBC5;
+    /* flex: 0.05 */
+    height: 35px;
+    align-self: flex-start;
+    width: 100%;
+    background-color: #95f492;
 }
 
 .name {
     flex: 0.9;
-    height: 30px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: medium;
-    text-decoration: none;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Inconsolata', monospace;
+    font-size: large;
     outline: none;
     border: none;
-    background-color: #C6EBC5;
+    background-color: #95f49200;
 }
 
 .chat-header button {
     flex: 0.1;
+    display: grid;
+    place-items: center;
     outline: none;
     border: none;
-    background-color: #C6EBC5;
+    background-color: #95f49200;
 }
 
 .chat-header button:hover {
-    background-color: #405c3e31;
+    background-color: #ffffffc3;
 }
 
 .chat-messages {
     display: flex;
+    flex: 1;
+    justify-self: flex-start;
     flex-direction: column;
     justify-content: flex-start;
-    height: 80%;
     overflow-y: auto;
+    /* border: 1px solid red; */
 }
 
 .Message {
     display: flex;
-    margin: 15px 10px 0;
+    margin: 15px 10px 15px;
     font-weight: bold;
 }
 
@@ -121,7 +130,7 @@ html, body {
     padding: 1px 6px 0 10px;
     color: #377D71;
     background-color: #DDE6ED;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .other {
@@ -131,14 +140,15 @@ html, body {
     color: #eb2222;
     /* background-color: #9DB2BF; */
     background-color: #f0c8d0;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .title-name {
     text-align: left;
     height: 15px;
     padding: 2px 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: smaller;
     font-weight: bold;
 }
 
@@ -146,8 +156,9 @@ html, body {
     padding: 8px 20px 10px;
     max-width: 300px;
     overflow-wrap: break-word;
-    font-family: 'Roboto', sans-serif;
-    font-size: large;
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+    font-weight: bolder;
     color: #270585;
 }
 
@@ -159,39 +170,40 @@ code {
 .time-stamp {
     text-align: right;
     height: 20px;
-    /* padding-bottom: 2px; */
+    font-size: small;
     font-family: 'Inconsolata', monospace;
     color: #52486f;
 }
 
 .input {
     display: flex;
-    /* flex-direction: row; */
-    justify-content: space-between;
-    position: absolute;
-    bottom: 42px;
-    height: 50px;
+    height: 46px;
+    padding: 10px 0;
+    justify-content: space-around;
+    background-color: #0000005e;
     width: 100%;
 }
 
 .input textarea {
-    flex: 0.9;
+    flex: 0.85;
     box-sizing: border-box;
-    height: 100%;
     resize: none;
-    padding: 10px;
-    padding: 13px 10px 7px 20px;
+    padding: 7px 6px 6px;
+    padding-left: 25px;
+    line-height: 30px;
     font-family: 'Raleway', sans-serif;
     font-size: large;
+    font-weight: bolder;
     text-decoration: none;
     outline: none;
     border: none;
-    border-radius: 30px 0 0 30px;
-    background-color: #d75b74;
+    border-radius: 20px;
+    /* background-color: #ffe6ab; */
+    background-color: #C6EBC5;
 }
 
 .input textarea::placeholder {
-    color: black;
+    color: rgba(0, 0, 0, 0.34);
 }
 
 .input button {
@@ -200,10 +212,11 @@ code {
     flex: 0.1;
     /* width: 20%; */
     height: 100%;
-    border-radius: 0 70px 70px 0;
+    /* border-radius: 0 70px 70px 0; */
+    border-radius: 20px;
     border: none;
     background: none;
-    background-color: #1bc00cdb;
+    background-color: #95f492;
 }
 
 .input button:hover {
