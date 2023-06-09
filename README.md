@@ -3,14 +3,14 @@ This is a React sidebar application that supports live chatting, allowing users 
 
 ## Live Demo
 You can access the live demo of the application at Demo Link.
+https://smalik21.github.io/sidebar-react/
 
 ## Getting Started
 To run the React sidebar chat application locally, follow these steps:
 
 - Clone the repository:
-`git clone https://github.com/your-username/your-repo.git`
+`git clone https://github.com/smalik21/sidebar-react.git`
 - Install dependencies:
-`cd your-repo`
 `npm install`
 - Start the development server:
 `npm start`
@@ -25,7 +25,8 @@ The chat feature enables real-time messaging between users through a WebSocket c
 
 - Message Display: Each message in the chat is displayed with the name of the sender, the message content, and a timestamp. The user's own messages are distinguished from others using the socket ID associated with each message.
 
-### Theme Toggle Button: A toggle button is provided within the sidebar interface, enabling users to switch between light and dark mode. When the user interacts with the toggle button, the theme state is updated accordingly.
+### Theme Toggle Button:
+A toggle button is provided within the sidebar interface, enabling users to switch between light and dark mode. When the user interacts with the toggle button, the theme state is updated accordingly.
 
 ## Code Highlighting
 - The sidebar application automatically highlights code snippets shared in the chat, improving their readability. Here's an overview of the code highlighting feature:
