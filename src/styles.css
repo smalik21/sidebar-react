@@ -42,7 +42,7 @@ html, body {
 }
 
 .toggle-button:hover {
-    background-color: #ff6d8a;
+    background-color: #15ff00dd;
 }
 
 .toggle-button:active {
@@ -66,11 +66,11 @@ html, body {
 }
 
 .Dark {
-    background-color: #27374D;
+    background-color: #395174;
 }
 
 .Light {
-    background-color: #f9f5f668;
+    background-color: #c5d3dc5b;
 }
 
 .chat-header {
@@ -112,13 +112,14 @@ html, body {
     justify-self: flex-start;
     flex-direction: column;
     justify-content: flex-start;
+    padding-bottom: 15px;
     overflow-y: auto;
     /* border: 1px solid red; */
 }
 
 .Message {
     display: flex;
-    margin: 15px 10px 15px;
+    margin: 15px 10px 0;
     font-weight: bold;
 }
 
@@ -139,7 +140,7 @@ html, body {
     padding: 1px 6px 0 10px;
     color: #eb2222;
     /* background-color: #9DB2BF; */
-    background-color: #f0c8d0;
+    background-color: #ddc4c9;
     border-radius: 10px;
 }
 
@@ -178,9 +179,9 @@ code {
 .input {
     display: flex;
     height: 46px;
-    padding: 10px 0;
+    padding: 15px 0;
     justify-content: space-around;
-    background-color: #0000005e;
+    background-color: #0000008e;
     width: 100%;
 }
 
