@@ -1,22 +1,25 @@
-  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat:wght@300&family=Raleway:wght@300&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat:wght@300&family=Raleway:wght@300&family=Roboto+Mono&display=swap');
 
 /* For Webkit based browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 5px; /* Set the width of the scrollbar */
+    width: 5px;
+    /* Set the width of the scrollbar */
     cursor: pointer;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #b4b0b0; /* Set the color of the scrollbar thumb */
-    border-radius: 5px; /* Set the border radius of the scrollbar thumb */
-  }
+}
 
-html, body {    
+::-webkit-scrollbar-thumb {
+    background-color: #b4b0b0;
+    /* Set the color of the scrollbar thumb */
+    border-radius: 5px;
+    /* Set the border radius of the scrollbar thumb */
+}
+
+html,
+body {
     margin: 0;
     padding: 0;
-    background: url(../public/background-pattern.jpg);
+    background: url(../public/background-sunset.jpg);
     background-repeat: repeat;
-    /* background-size: cover; */
 }
 
 .Header {
@@ -38,7 +41,7 @@ html, body {
     border: none;
     background: none;
     background-color: #95f492;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .toggle-button:hover {
