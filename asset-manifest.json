@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/sidebar-react/static/css/main.4a920763.css",
-    "main.js": "/sidebar-react/static/js/main.64fd9c75.js",
+    "main.css": "/sidebar-react/static/css/main.7a9b1875.css",
+    "main.js": "/sidebar-react/static/js/main.d7eef110.js",
     "static/js/787.813286dc.chunk.js": "/sidebar-react/static/js/787.813286dc.chunk.js",
-    "static/media/background-pattern.jpg": "/sidebar-react/static/media/background-pattern.cedaf0f846a3833776b3.jpg",
+    "static/media/background-sunset.jpg": "/sidebar-react/static/media/background-sunset.b2218734fb7903f1d9d2.jpg",
     "index.html": "/sidebar-react/index.html",
-    "main.4a920763.css.map": "/sidebar-react/static/css/main.4a920763.css.map",
-    "main.64fd9c75.js.map": "/sidebar-react/static/js/main.64fd9c75.js.map",
+    "main.7a9b1875.css.map": "/sidebar-react/static/css/main.7a9b1875.css.map",
+    "main.d7eef110.js.map": "/sidebar-react/static/js/main.d7eef110.js.map",
     "787.813286dc.chunk.js.map": "/sidebar-react/static/js/787.813286dc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a920763.css",
-    "static/js/main.64fd9c75.js"
+    "static/css/main.7a9b1875.css",
+    "static/js/main.d7eef110.js"
   ]
 }
