@@ -18,8 +18,11 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background: url(../public/background-sunset.jpg);
-    background-repeat: repeat;
+}
+
+body {
+    background: url(../public/background.jpg);
+    background-size: cover;
 }
 
 .Header {
